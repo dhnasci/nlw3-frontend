@@ -1,21 +1,13 @@
 import React from "react";
 import { Map, Marker, TileLayer } from 'react-leaflet';
-import L from 'leaflet';
 
-import mapMarkerImg from '../images/map-marker.svg';
-
-import '../styles/pages/create-orphanage.css';
 import Sidebar from "../components/Sidebar";
 
+import '../styles/pages/create-orphanage.css';
+
 import { FiPlus } from 'react-icons/fi';
+import mapIcon from "../utils/mapIcon";
 
-const mapIcon = L.icon({
-  iconUrl: mapMarkerImg,
-
-  iconSize: [58, 68],
-  iconAnchor: [29, 68],
-  popupAnchor: [0, -60]
-})
 
 export default function CreateOrphanage() {
   
